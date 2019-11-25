@@ -1,0 +1,2 @@
+# Codewars
+This repository will contain all of the codewars challenges I complete, describe what they aim to do, and sometimes contain multiple solutions I have found. Each challenge will additionally contain basic testing to verify its accuracy.
