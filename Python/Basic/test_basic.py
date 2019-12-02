@@ -3,6 +3,7 @@ from squares_needed import squares_needed
 from get_count import getCount
 from longest import longest
 from is_divisible import is_divisible
+from find_uniq import find_uniq
 
 class test_basic(unittest.TestCase):
     def test_squares_needed(self):
@@ -26,6 +27,13 @@ class test_basic(unittest.TestCase):
         self.assertEqual(is_divisible(12,3,4),True)
         self.assertEqual(is_divisible(8,3,4),False)
         self.assertEqual(is_divisible(48,3,4),True)
+    def test_find_uniq(self):
+        self.assertEqual(find_uniq([ 1, 1, 1, 2, 1, 1 ]), 2)
+        self.assertEqual(find_uniq([ 0, 0, 0, 0.55, 0, 0 ]), 0.55)
+        self.assertEqual(find_uniq([ 0, 1, 1, 1, 1 ]), 0)
+        self.assertEqual(find_uniq([ 2345, 10, 2345, 2345, 2345, 2345, 2345 ]), 10)
+        
+
         
 # By default, running this test file will test for all Basic Python challenges that do not have in-file testing.      
 if __name__ == '__main__':
